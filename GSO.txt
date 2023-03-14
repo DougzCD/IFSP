@@ -1,0 +1,98 @@
+sudo apt update
+
+sudo apt install samba
+
+sudo systemctl status smbd
+
+sudo systemctl status nmbd
+
+sudo ufw status
+
+cd /etc/samba
+
+sudo cp smb.conf smb.backup
+
+ls
+
+sudo nano smb.conf
+//////////////////////////
+interefaces = 127.0.0.0/8 enp0s3
+bind interfaces only = yes
+//////////////////////////
+
+sudo systemctl restart smbd
+sudo systemctl restart nmbd
+
+sudo mkdir /samba
+
+sudo chgrp sambashare /samba
+
+sudo useradd -M -d /samba/josh -s /usr/sbin/nologin -G sambashare josh
+
+sudo mkdir /samba/josh
+
+sudo chown josh:sambashare /samba/josh
+
+sudo chmod 777 /samba/josh
+
+sudo smbpasswd -a josh
+///////////////////////
+aluno123
+
+
+///////////////////////
+
+sudo smbpasswd -e josh
+
+sudo useradd -M -d /samba/users -s /usr/sbin/nologin -G sambashare sadmin
+
+sudo smbpasswd -a sadmin
+///////////////////////
+aluno123
+
+
+///////////////////////
+
+sudo mkdir /samba/users
+
+
+sudo nano smb.conf
+/////////////////////////////////////
+ctrl-k copia
+ctrl-u cola
+
+write list = root. @lpadmin
+[users]
+    path = /samba/users
+    browseable = yes
+    read only = no
+    force create mode = 0660
+    force directory mode = 2770
+    valid users = @sambashare @sadmin
+
+[josh]
+    path = /samba/josh
+    browseable = yes
+    read only = no
+    force create mode = 0660
+    force directory mode = 2770
+    valid users = @josh @sadmin
+
+/////////////////////////////////////
+
+sudo systemctl restart smbd
+sudo systemctl restart nmbd
+
+sudo apt install smbclient
+
+smbclient /10.120.70.92/josh -U josh
+
+sudo apt install cifs-utils
+
+sudo mkdir /mnt/smbmount
+
+sudo mount -t cifs -o username=josh //10.120.70.92/josh /mnt/smbmount
+
+cd /samba/josh
+
+mkdir teste
