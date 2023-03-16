@@ -1,2 +1,0 @@
-git submodule add https://github.com/DougzCD/APSI5.git APSI5
-git submodule update --init --recursive
