@@ -13,9 +13,11 @@
 [submodule "5º_Semestre/TSWI5"]
 	path = 5º_Semestre/TSWI5
 	url = https://github.com/DougzCD/TSWI5.git
+
 [submodule "5º_Semestre/GSOI5"]
 	path = 5º_Semestre/GSOI5
 	url = https://github.com/DougzCD/GSOI5.git
+	
 [submodule "3º_Semestre/BDDI3"]
 	path = 3º_Semestre/BDDI3
 	url = https://github.com/DougzCD/BDDI3.git
