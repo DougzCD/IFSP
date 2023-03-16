@@ -1,2 +1,0 @@
-git submodule add https://github.com/DougzCD/GSOI5.git GSOI5
-git submodule update --init --recursive
