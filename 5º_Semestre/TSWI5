@@ -1,2 +1,0 @@
-git submodule add https://github.com/DougzCD/TSWI5.git TSWI5
-git submodule update --init --recursive
