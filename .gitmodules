@@ -1,3 +1,15 @@
 [submodule "5º_Semestre/APSI5"]
 	path = 5º_Semestre/APSI5
 	url = https://github.com/DougzCD/APSI5.git
+
+[submodule "5º_Semestre/GSOI5"]
+	path = 5º_Semestre/GSOI5
+	url = https://github.com/DougzCD/GSOI5.git
+
+[submodule "5º_Semestre/PDMI5"]
+	path = 5º_Semestre/PDMI5
+	url = https://github.com/DougzCD/PDMI5.git
+
+[submodule "5º_Semestre/TSWI5"]
+	path = 5º_Semestre/TSWI5
+	url = https://github.com/DougzCD/TSWI5.git

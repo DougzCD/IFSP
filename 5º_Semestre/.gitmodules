@@ -2,7 +2,7 @@ git submodule add https://github.com/DougzCD/APSI5.git APSI5
 git submodule add git@github.com:https://github.com/DougzCD/APSI5.git APSI5
 
 git submodule add https://github.com/DougzCD/GSOI5.git GSOI5
-git submodule add git@github.com:https://github.com/DougzCD/GSOI5.git GSOI5
+git submodule add git@github.com: DougzCD/GSOI5.git GSOI5
 
 git submodule add https://github.com/DougzCD/PDMI5.git PDMI5
 git submodule add git@github.com:https://github.com/DougzCD/PDMI5.git PDMI5
