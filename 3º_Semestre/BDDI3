@@ -1,2 +1,0 @@
-git submodule add https://github.com/DougzCD/BDDI3.git BDDI3
-git submodule update --init --recursive

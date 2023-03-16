@@ -1,0 +1,19 @@
+sudo apt update
+
+sudo rm -rf /var/lib/apt/lists/lock
+
+sudo useradd
+
+smb.config
+
+sudo apt install smbclient
+
+smbclient //10.120.70.88/josh -U josh
+
+sudo apt install cifs-utils
+
+sudo mkdir /mnt/smbmount
+sudo mount -t cifs io username=josh //10.120.70.88/josh /mnt/smbmount
+
+sudo apt install smbclient
+sudo rm -rf /var/lib/apt/lists/lock
