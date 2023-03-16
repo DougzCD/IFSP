@@ -13,3 +13,6 @@
 [submodule "5º_Semestre/TSWI5"]
 	path = 5º_Semestre/TSWI5
 	url = https://github.com/DougzCD/TSWI5.git
+[submodule "GSOI5"]
+	path = GSOI5
+	url = https://github.com/DougzCD/GSOI5.git
